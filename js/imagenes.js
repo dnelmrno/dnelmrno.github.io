@@ -59,6 +59,13 @@ function cargarImagenes() {
 	aves[8] = "img/aves/Parkesia_noveboracensis.png";
 	aves[9] = "img/aves/Eupsittula pertinax.png";
 	aves[10] = "img/aves/Hydropsalis cayennensis.png";
+	aves[11] =  "img/aves/Leistes_militaris.png";
+	aves[12] =  "img/aves/Ara_severus.png";
+	aves[13] =  "img/aves/Athene_cunicularia.png";
+	aves[14] =  "img/aves/Caracara_plancus.png";
+	aves[15] =  "img/aves/Corapgys_atratus.png";
+
+	
 	
 
 	pokemon[0] = "img/pokemon/aerodactyl.png";
