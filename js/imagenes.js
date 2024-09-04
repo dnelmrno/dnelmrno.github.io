@@ -64,6 +64,11 @@ function cargarImagenes() {
 	aves[13] =  "img/aves/Athene_cunicularia.png";
 	aves[14] =  "img/aves/Caracara_plancus.png";
 	aves[15] =  "img/aves/Corapgys_atratus.png";
+	aves[16] =  "img/aves/Eurypyga_helias.png";
+	aves[17] =  "img/aves/Falco_femoralis.png";
+	aves[18] =  "img/aves/Mitu_tomentosa.png";
+	aves[19] =  "img/aves/Patagioenas_cayennensis.png";
+	aves[20] =  "img/aves/Phaetusa_simplex.png";
 
 	
 	
