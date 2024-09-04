@@ -48,8 +48,8 @@ function cargarImagenes() {
 	coches[40] = "img/coches/volvov40.jpg";
 	coches[41] = "img/coches/volvoxc40.jpg";
 
-	aves[1] = "img/aves/sturnela.png";
-	aves[0] = "img/aves/Vireo_olivaeus.png";
+	aves[0] = "img/aves/sturnela.png";
+	aves[1] = "img/aves/Vireo_olivaeus.png";
 	aves[2] = "img/aves/Tolmomyias_sulphurescens.png";
 	aves[3] = "img/aves/Sporophila_intermedia.png";
 	aves[4] = "img/aves/Setophaga_striata.png";
@@ -57,8 +57,8 @@ function cargarImagenes() {
 	aves[6] = "img/aves/rampho_.png";
 	aves[7] = "img/aves/Phacelodomus_rufifrons.png";
 	aves[8] = "img/aves/Parkesia_noveboracensis.png";
-	aves[9] = "img/aves/Eupsittula pertinax.png";
-	aves[10] = "img/aves/Hydropsalis cayennensis.png";
+	aves[9] = "img/aves/Eupsittula_pertinax.png";
+	aves[10] = "img/aves/Hydropsalis_cayennensis.png";
 	aves[11] =  "img/aves/Leistes_militaris.png";
 	aves[12] =  "img/aves/Ara_severus.png";
 	aves[13] =  "img/aves/Athene_cunicularia.png";
@@ -69,7 +69,9 @@ function cargarImagenes() {
 	aves[18] =  "img/aves/Mitu_tomentosa.png";
 	aves[19] =  "img/aves/Patagioenas_cayennensis.png";
 	aves[20] =  "img/aves/Phaetusa_simplex.png";
-
+	aves[21] =  "img/aves/Platalea_ajaja.png";
+	aves[22] =  "img/aves/Syrignma_sibilatrix.png";
+	aves[23] =  "img/aves/Herpetotheres_cachinans.png";
 	
 	
 
