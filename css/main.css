@@ -23,10 +23,15 @@ html {
 
 /*CUERPO*/
 body {
-    background: #f83838;
+    /*background: #f83838;
     background: -webkit-linear-gradient(to bottom, #ffefef, #fdaeae, #f83838);
     background: linear-gradient(to bottom, #ffefef, #fdaeae, #f83838); 
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat; */
+  background-image: url('icon/fondo3.svg');
+  background-size: cover; /* Opcional: Ajusta el tamaño de la imagen para cubrir todo el elemento */
+  background-position: center; /* Opcional: Centra la imagen en el elemento */
+  background-repeat: no-repeat; /* Opcional: Evita que la imagen se repita */
+
 }
 
 /*CONTAINER ELEMENTS*/
