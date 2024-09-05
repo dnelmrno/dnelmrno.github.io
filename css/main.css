@@ -131,7 +131,7 @@ input[type='image'] {
 }
 
 .back input[type='image']:hover {
-    border: 2px solid #1f8fff;
+    border: 5px solid #1f8fff;    
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
