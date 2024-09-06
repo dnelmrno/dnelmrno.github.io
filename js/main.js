@@ -28,8 +28,11 @@ function dificultad() {
 		case "reptiles":
 			generarCartas(4, 8, reptiles);
 			break;
-		case "dificil":
-			generarCartas(4, 8, aves);
+		case "anfibios":
+			generarCartas(4, 8, reptiles);
+			break;
+		case "insectos":
+			generarCartas(4, 8, reptiles);
 			break;
 	}
 	document.getElementById("modal").setAttribute("class", "hide");
