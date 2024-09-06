@@ -29,7 +29,7 @@ function dificultad() {
 			generarCartas(4, 8, reptiles);
 			break;
 		case "anfibios":
-			generarCartas(4, 8, reptiles);
+			generarCartas(4, 8, anfibios);
 			break;
 		case "insectos":
 			generarCartas(4, 8, reptiles);
