@@ -23,21 +23,21 @@ function cargarImagenes() {
 	reptiles[15] = "img/reptiles/Eunectes_murinus.png";
 	reptiles[16] = "img/reptiles/Gonatodes_riveroi.png";
 	reptiles[17] = "img/reptiles/Leptophis_ahetulla_02.png";
-	/*reptiles[18] = "img/reptiles/mazda2.png";
-	reptiles[19] = "img/reptiles/mazda3.png";
-	reptiles[20] = "img/reptiles/mercedesclasee.png";
-	reptiles[21] = "img/reptiles/mercedesclases.png";
-	reptiles[22] = "img/reptiles/nissanleaf.png";
-	reptiles[23] = "img/reptiles/nissanqashqai.png";
-	reptiles[24] = "img/reptiles/opelcorsa.png";
-	reptiles[25] = "img/reptiles/opelinsignia.png";
-	reptiles[26] = "img/reptiles/peugeot5008.png";
-	reptiles[27] = "img/reptiles/peugeot508.png";
-	reptiles[28] = "img/reptiles/porsche911.png";
-	reptiles[29] = "img/reptiles/porschecayenne.png";
-	reptiles[30] = "img/reptiles/renault captur.png";
-	reptiles[31] = "img/reptiles/renault kadjar.jpeg";
-	reptiles[32] = "img/reptiles/seatleon.png";*/
+	reptiles[18] = "img/reptiles/Iguana_iguana.png";
+	reptiles[19] = "img/reptiles/Helicops_angulatus.png";
+	reptiles[20] = "img/reptiles/Imantodes_cenchoa.png";
+	reptiles[21] = "img/reptiles/Kinosternon_scorpioides.png";
+	reptiles[22] = "img/reptiles/Micrurus_helleri.png";
+	reptiles[23] = "img/reptiles/Micrurus_surinamensis.png";
+	reptiles[24] = "img/reptiles/Oxyrhophus_petola.png";
+	reptiles[25] = "img/reptiles/Paleosuchus_palpebrosus.png";
+	reptiles[26] = "img/reptiles/Podocnemis_vogli_02.png";
+	reptiles[27] = "img/reptiles/Podocnemis_unifilis.png";
+	reptiles[28] = "img/reptiles/Polychrus-marmoratus.png";
+	reptiles[29] = "img/reptiles/Siphlophis_compresus.png";
+	reptiles[30] = "img/reptiles/Tupinambis_sp.png";
+	reptiles[31] = "img/reptiles/Uranoscodon_superciliosus.png";
+	reptiles[32] = "img/reptiles/Varzea_altamazonica.png";
 	
 
 	aves[0] = "img/aves/sturnela.png";
