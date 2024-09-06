@@ -25,8 +25,8 @@ function dificultad() {
 		case "aves":
 			generarCartas(4, 8, aves);
 			break;
-		case "medio":
-			generarCartas(4, 8, aves);
+		case "reptiles":
+			generarCartas(4, 8, reptiles);
 			break;
 		case "dificil":
 			generarCartas(4, 8, aves);
