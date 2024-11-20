@@ -1,105 +1,39 @@
-/* VARIABLES */
+/*VARIABLES*/
 :root {
-    --gridHeight: 18vw; /* Usamos vw para las celdas, lo que hace que se adapten bien al ancho */
-    --gridWidht: 18vw;  /* Lo mismo para el ancho */
+    --gridHeight: 80px;
+    --gridWidht: 80px;
 }
 
-/* MODAL INICIAL */
+/*MODAL INICIAL */
 .modal-content {
-    width: 90%; /* Reducir un poco el modal para pantallas pequeñas */
-    max-width: 450px; /* Evitar que sea demasiado grande */
-    margin: 0 auto; /* Centrarlo */
-    padding: 20px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para un efecto más suave */
+    width: 95%;
 }
 
 /* GRID */
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ajustar columnas con un mínimo de 120px */
-    padding: 5%; /* Añadir más espacio alrededor del grid */
-    gap: 12px; /* Espacio reducido entre las celdas */
+    padding: 3%;
+    gap: 18px;
 }
 
-/* Celdas dentro del grid */
 .carta input[type='image'] {
     width: var(--gridWidht);
     height: var(--gridHeight);
-    object-fit: cover; /* Asegura que la imagen se ajuste bien a las celdas */
-    border-radius: 8px; /* Esquinas redondeadas para las imágenes */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil para resaltar las imágenes */
 }
 
-/* Estilo de las cartas rotadas */
 .mostrar {
-    transform: rotateY(180deg) scale(1.15);
-    -ms-transform: rotateY(180deg) scale(1.15);
-    -moz-transform: rotateY(180deg) scale(1.15);
-    -webkit-transform: rotateY(180deg) scale(1.15);
-    -o-transform: rotateY(180deg) scale(1.15);
+    transform: rotateY(180deg) scale(1.2);
+    -ms-transform: rotateY(180deg) scale(1.2); /* IE 9  */
+    -moz-transform: rotateY(180deg) scale(1.2); /* Firefox */
+    -webkit-transform: rotateY(180deg) scale(1.2); /* Safari and Chrome */
+    -o-transform: rotateY(180deg) scale(1.2); /* Opera */
 }
 
-/* BOTONES */
+/*BOTONES*/
 .btn {
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px; /* Bordes redondeados para los botones */
-    background-color: #f1c40f; /* Color dorado para los botones */
-    color: white;
-    transition: background-color 0.3s;
+    padding: 4px 7px;
+    font-size: 14px;
 }
 
-/* Hover para botones */
 .btn:hover, .btn.cancel:hover, .btn.neutral:hover {
-    background-color: #e67e22; /* Color más oscuro al pasar el mouse */
-    padding: 10px 15px; /* Reducir un poco el tamaño al hacer hover */
-}
-
-/* Ajustes para pantallas verticales pequeñas */
-@media (max-width: 768px) and (orientation: portrait) {
-    :root {
-        --gridHeight: 20vw;  /* Aumentamos el tamaño de las celdas para mejorar la visualización */
-        --gridWidht: 20vw;   
-    }
-
-    .modal-content {
-        width: 90%; /* El modal se ajusta bien a pantallas pequeñas */
-    }
-
-    .wrapper {
-        gap: 10px; /* Reducimos el espacio entre las celdas */
-    }
-
-    .carta input[type='image'] {
-        width: var(--gridWidht);
-        height: var(--gridHeight);
-    }
-
-    .btn {
-        font-size: 18px; /* Aumentar tamaño del texto en los botones */
-        padding: 14px 25px; /* Botones más grandes para facilitar su uso en pantallas táctiles */
-    }
-}
-
-/* Ajustes para pantallas muy pequeñas */
-@media (max-width: 480px) and (orientation: portrait) {
-    :root {
-        --gridHeight: 25vw;  /* Aumentamos aún más el tamaño de las celdas */
-        --gridWidht: 25vw;   
-    }
-
-    .modal-content {
-        width: 95%; /* Usar más del ancho disponible */
-        padding: 15px; /* Reducir un poco el padding */
-    }
-
-    .wrapper {
-        gap: 8px; /* Reducir aún más el espacio entre las celdas */
-    }
-
-    .btn {
-        font-size: 20px; /* Aumentar el tamaño de los botones */
-        padding: 18px 30px; /* Botones más grandes */
-    }
+    padding: 1px 4px;
 }
