@@ -1,34 +1,47 @@
-/*VARIABLES*/
+/* VARIABLES */
 :root {
-    --gridHeight: 80px;
-    --gridWidht: 80px;
+    --gridHeight: 80px;  /* Tamaño de las fichas */
+    --gridWidth: 80px;   /* Tamaño de las fichas */
+    --gap: 18px;         /* Espacio entre las fichas */
 }
 
-/*MODAL INICIAL */
+/* MODAL INICIAL */
 .modal-content {
-    width: 95%;
+    width: 90%;
+    max-width: 500px;    /* Limitar el ancho del modal */
+    max-height: 80vh;    /* Limitar la altura del modal */
+    margin: auto;
+    padding: 20px;
+    overflow: auto;      /* Agregar scroll si el contenido excede la altura */
 }
 
 /* GRID */
 .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* Mantener 4 columnas */
+    gap: var(--gap);  /* Espacio entre fichas */
     padding: 3%;
-    gap: 18px;
+    justify-items: center;
+    align-items: center;
 }
 
+/* Ajustar tamaño de las fichas en el tablero */
 .carta input[type='image'] {
-    width: var(--gridWidht);
+    width: var(--gridWidth);
     height: var(--gridHeight);
+    object-fit: cover;  /* Mantener la imagen sin deformarla */
 }
 
+/* Mostrar las cartas con rotación y escala */
 .mostrar {
     transform: rotateY(180deg) scale(1.2);
     -ms-transform: rotateY(180deg) scale(1.2); /* IE 9  */
     -moz-transform: rotateY(180deg) scale(1.2); /* Firefox */
-    -webkit-transform: rotateY(180deg) scale(1.2); /* Safari and Chrome */
+    -webkit-transform: rotateY(180deg) scale(1.2); /* Safari y Chrome */
     -o-transform: rotateY(180deg) scale(1.2); /* Opera */
 }
 
-/*BOTONES*/
+/* BOTONES */
 .btn {
     padding: 4px 7px;
     font-size: 14px;
@@ -36,4 +49,44 @@
 
 .btn:hover, .btn.cancel:hover, .btn.neutral:hover {
     padding: 1px 4px;
+}
+
+/* MEDIA QUERY para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        max-width: none;  /* Eliminar el límite de ancho */
+        height: 80%;      /* Hacer el modal más grande en pantallas pequeñas */
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr); /* Mantener 4 columnas */
+        gap: 12px;  /* Reducir el espacio entre fichas */
+    }
+
+    .carta input[type='image'] {
+        width: 70px;  /* Reducir ligeramente el tamaño de las fichas */
+        height: 70px;
+    }
+
+    .btn {
+        font-size: 12px; /* Reducir tamaño de botones */
+    }
+}
+
+/* MEDIA QUERY para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);  /* Mantener 4 columnas */
+        gap: 8px;  /* Reducir aún más el espacio entre fichas */
+    }
+
+    .carta input[type='image'] {
+        width: 60px;  /* Reducir aún más el tamaño de las fichas */
+        height: 60px;
+    }
 }
