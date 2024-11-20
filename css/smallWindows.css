@@ -1,0 +1,60 @@
+/* VARIABLES */
+:root {
+    --gridHeight: 10vw; /* Usar un valor relativo */
+    --gridWidht: 10vw; /* Usar un valor relativo */
+}
+
+/* MODAL INICIAL */
+.modal-content {
+    width: 80%;
+    max-width: 600px; /* Límite máximo para pantallas grandes */
+    margin: 0 auto; /* Centrar el modal */
+}
+
+/* GRID */
+.wrapper {
+    padding: 3%;
+    gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajuste de columnas automáticas */
+}
+
+/* Celdas dentro del grid */
+input[type='image'] {
+    height: var(--gridHeight);
+    width: var(--gridWidht);
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al espacio */
+}
+
+/* MODIFICACIONES PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    :root {
+        --gridHeight: 15vw; /* Aumentar el tamaño de las celdas en pantallas pequeñas */
+        --gridWidht: 15vw; 
+    }
+
+    .modal-content {
+        width: 90%; /* Más espacio en pantallas pequeñas */
+    }
+
+    .wrapper {
+        padding: 5%; /* Ajustar el padding */
+        gap: 10px; /* Reducir el espacio entre elementos */
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%; /* Ajustar aún más el modal */
+    }
+
+    .wrapper {
+        gap: 8px;
+    }
+
+    input[type='image'] {
+        height: 20vw; /* Ajustar aún más el tamaño de las celdas */
+        width: 20vw;
+    }
+}

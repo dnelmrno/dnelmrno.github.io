@@ -1,0 +1,85 @@
+/* VARIABLES */
+:root {
+    --gridHeight: 15vw;  /* Usamos vw para hacer que el tamaño dependa del ancho de la ventana */
+    --gridWidht: 15vw;   /* Ajustamos el ancho de la celda también con vw */
+}
+
+/* MODAL INICIAL */
+.modal-content {
+    width: 95%; /* Mantener el modal ajustado en pantallas pequeñas */
+    max-width: 500px; /* Evitar que el modal se expanda demasiado */
+    margin: 0 auto; /* Centrar el modal */
+}
+
+/* GRID */
+.wrapper {
+    padding: 3%;
+    gap: 15px;  /* Reducimos el espacio entre las celdas */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajusta las celdas */
+}
+
+/* Celdas dentro del grid */
+.carta input[type='image'] {
+    width: var(--gridWidht);
+    height: var(--gridHeight);
+    object-fit: cover; /* Hace que la imagen se ajuste bien dentro de la celda */
+}
+
+/* Estilo de las cartas rotadas */
+.mostrar {
+    transform: rotateY(180deg) scale(1.2);
+    -ms-transform: rotateY(180deg) scale(1.2);
+    -moz-transform: rotateY(180deg) scale(1.2);
+    -webkit-transform: rotateY(180deg) scale(1.2);
+    -o-transform: rotateY(180deg) scale(1.2);
+}
+
+/* BOTONES */
+.btn {
+    padding: 4px 7px;
+    font-size: 14px;
+}
+
+/* Estilo para hover de botones */
+.btn:hover, .btn.cancel:hover, .btn.neutral:hover {
+    padding: 1px 4px;
+}
+
+/* Ajustes para pantallas pequeñas y verticales */
+@media (max-width: 768px) and (orientation: portrait) {
+    :root {
+        --gridHeight: 20vw;  /* Aumentamos el tamaño de las celdas en pantallas verticales */
+        --gridWidht: 20vw;  
+    }
+
+    .modal-content {
+        width: 90%;  /* Ajuste más grande en pantallas pequeñas */
+    }
+
+    .wrapper {
+        gap: 12px; /* Reducimos el espacio entre las celdas */
+    }
+
+    /* Ajustar las imágenes dentro del grid */
+    .carta input[type='image'] {
+        width: var(--gridWidht);
+        height: var(--gridHeight);
+    }
+}
+
+/* Ajustes para pantallas extremadamente pequeñas */
+@media (max-width: 480px) and (orientation: portrait) {
+    :root {
+        --gridHeight: 25vw;  /* Aumentamos aún más el tamaño de las celdas */
+        --gridWidht: 25vw;
+    }
+
+    .modal-content {
+        width: 95%; /* Maximizar el modal */
+    }
+
+    .wrapper {
+        gap: 8px; /* Reducimos más el espacio entre las celdas */
+    }
+}
